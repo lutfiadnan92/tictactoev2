@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="game-setup">
+        <h1>TicTacToe Games</h1>
+        <p><strong>Board size:</strong></p>
+        <select class="board-size"></select>
+        <p><strong>Choose length in a row</strong></p>
+        <select class="board-count"></select>
+        <button class="build-board">Build Board</button>
+    </div>
+    <div class="game-play">
+        <h1 class="title"></h1>
+        <div class="players clearfix">
+            <button class="player1">Player 1 <br/> Score: <span>0</span></button>
+            <button class="player2">Player 2 <br/> Score: <span>0</span></button>
+        </div>
+        <div class="msg-container">
+            <div id="msg">Let's Play!</div>
+        </div>
+        <button class="restartGame">Restart Game</button><br>
+        <div class="container .clearfix"></div>
+        <button class="reset">Reset Board (R)</button>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

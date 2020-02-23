@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}  
+body {
+    margin: 5%;
+}
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.container {
+    width: 450px;
+    height: 450px;
+    display: block;
+    margin: 0 auto;
+}
+.cell {
+    width: 20%;
+    height: 20%;
+    background-color: rgba(0,0,0,.07);
+    float: left;
+    border: 1px solid white;
+}
+button {
+    font-size: 20px;
+    width: 20%;
+    text-align: center;
+    outline: none;
+    float: left;
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 0;
+}
+button.player1 {
+    margin-left: 30%;
+    border-radius: 5px 0 0 5px;
+}
+button.player2 {
+    margin-right: 30%;
+    border-radius: 0 5px 5px 0;
+}
+button.reset, button.build-board {
+    display: block;
+    margin-top: 30px;
+    cursor: pointer;
+}
+button.reset {
+    margin: 30px auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.msg-container {
+    text-align: center;
+    font-style: italic;
+    font-size: 25px;
+    width: 40%;
+    height: auto;
+    padding: 10px;
+    display: block;
+    margin: 10px auto;
+    background-color: #d3d3d3;
+}
+.msg{
+    background-color: #d3d3d3;
+}
+.player1 {
+    background-color: chartreuse;
+}
+.player2 {
+    background-color: yellow;
+}
+.reset {
+    background-color: #999;
+    color: #fff;
+}
+.game-setup {
+    display: block;
+}
+.game-play {
+    display: none;
+}
+select {
+    display: block;
+    border: 0;
+    padding: 7px 3px;
+}
+.win {
+    background-color: red;
+}
+.restartGame {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: red;
+    color: #fff;
+    padding: 5px 5px;
+    width: auto;
+    cursor: pointer;
+}
