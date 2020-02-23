@@ -1,6 +1,6 @@
 # tictactoe versi 2
-**tictactoe game with multi boards**
-* This game is played by two people
+**tictactoe game with multi boards**\
+This game is played by two people\
 How to play
 1. choose board size
 2. choose length in a row (to win the round)
