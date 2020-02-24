@@ -16,11 +16,16 @@ body {
     margin: 0 auto;
 }
 .cell {
-    width: 20%;
-    height: 20%;
     background-color: rgba(0,0,0,.07);
     float: left;
     border: 1px solid white;
+    text-align: center;
+    font-weight: bolder;
+    display: table;
+}
+.cell h2 {
+    display: table-cell;
+    vertical-align: middle;
 }
 button {
     font-size: 20px;
@@ -68,9 +73,15 @@ button.reset {
 .player1 {
     background-color: chartreuse;
 }
+/* .cell.player1::after {
+    content: 'O';
+} */
 .player2 {
     background-color: yellow;
 }
+/* .cell.player2::after {
+    content: 'X';
+} */
 .reset {
     background-color: #999;
     color: #fff;

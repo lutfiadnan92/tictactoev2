@@ -243,7 +243,7 @@ $(function() {
         for (let row = 0; row < size; row++) {
             for (let col = 0; col < size; col++) {
                 count++;
-                list += "<div class='cell' row=" + "'" + row + "' col='" + col + "'>" + count + "</div>";
+                list += "<div class='cell' row=" + "'" + row + "' col='" + col + "'>" + '<h2>+</h2>' + "</div>";
             }
         }
         $('.container').html(list);
@@ -364,6 +364,11 @@ $(function() {
             Game.addMark(player, row, col);
             Game.checkAll(player);
             el.addClass(player);
+            if(el.hasClass('player1')) {
+                el.html('<h2>X</h2>');
+            } else if(el.hasClass('player2')) {
+                el.html('<h2>O</h2>');
+            }
             checkRound();
         }
         return true;
@@ -374,6 +379,7 @@ $(function() {
         $cell.removeClass('player2');
         $cell.removeClass('win');
         $cell.on('click', takeMove);
+        $cell.html("<h2>+</h2>");
         $('button.reset').css({
             "display": "none"
         });
